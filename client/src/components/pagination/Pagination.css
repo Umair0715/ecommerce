@@ -1,0 +1,27 @@
+.pagination{
+   width: 100%;
+   padding: 5rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pagination > a {
+   color : var(--dark);
+   border : 1px solid lightgray;
+   padding: 1rem 2rem;
+   margin-left: .5rem;
+   font-size: 1.6rem;
+   cursor: pointer;
+   background-color: transparent;
+}
+
+.pagination > a:hover{
+   color: var(--primary);
+}
+
+.pagination > a.active{
+   background-color: var(--primary);
+   border-color: transparent;
+   color: var(--pure);
+}

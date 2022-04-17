@@ -1,0 +1,153 @@
+.dash__menu{
+   padding: 8rem 2rem 2rem 2rem;
+   /* background-color: grey; */
+}
+.dash__menu__logo > a {
+   color: var(--dark);
+}
+.dash__menu__logo > a > h1 {
+   font-family: 'Playball', cursive;
+   letter-spacing: 2px;
+   font-size: 2.5rem;
+   font-weight: 500;
+}
+.dash__menu__logo > a > h1:hover{
+   filter : drop-shadow(0 2px 2px var(--primary));
+}
+.dash__menu__list{
+   width: 100%;
+   box-sizing: border-box;
+   display: flex ;
+   flex-direction: column;
+   padding-top: 5rem;
+}
+.dash__menu__list > a:not(:first-child) {
+   margin-top: 3rem;
+}
+.dash__menu__list > a {
+  
+   font-size: 1.6rem;
+   color: rgb(146, 146, 146);
+}
+.dash__menu__list > a > p {
+   display:flex;
+   align-items: center;
+}
+.dash__menu__list > a > p > svg{
+   margin-right: 1rem;
+}
+.MuiTreeItem-content > div {
+   font-size: 1.6rem;
+   background-color: none;
+}
+
+.MuiTreeItem-iconContainer svg{
+   font-size: 1.6rem;
+}
+.MuiCollapse-wrapperInner{
+   padding: .5rem 0;
+}
+.MuiCollapse-wrapperInner > a{
+   margin-top: .5rem;
+   font-size: 1.6rem;
+   color: rgb(146, 146, 146);
+}
+.MuiTreeItem-content > div:hover ,
+.dash__menu__list > a > p:hover{
+   color: var(--primary);
+}
+
+/*************** DASHBOARD CONTENT *****************/
+.dash__content__container{
+   border-left: 1px solid lightgrey;
+   padding: 8rem 2rem 5rem 2rem ;
+}
+
+.dash__totalAmount{
+   width: 100%;
+   padding: 1.5rem 0;
+   text-align: center;
+   background-color: rgb(75, 136, 228);
+   font-size: 1.6rem;
+   color: white;
+   margin-top: 4rem;
+}
+.dash__details{
+   width: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.dash__details > a{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   background-color: rgb(255, 228, 153);
+   font-size: 1.8rem;
+   color: #000;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem;
+}
+.dash__details > a:first-child{
+   background-color: rgb(255, 110, 110);
+  color: rgb(255, 255, 255);
+}
+.dash__details > a:last-child {
+   background-color: rgb(51, 51, 51);
+   color: rgb(255, 255, 255);
+}
+
+.lineChart{
+   width: 80%;
+   margin: 0 auto;
+}
+.doughnutChart{
+   width: 40%;
+   margin: 3rem auto;
+}
+
+@media screen and (max-width: 950px) {
+   .dash__details > a {
+      width: 140px;
+      height: 140px;
+   }
+   .doughnutChart{
+      width: 60%;
+   }
+   .lineChart{
+      width: 100%;
+      height: 100%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .dash__details > a {
+      width: 120px;
+      height: 120px;
+      margin: 2rem 1rem;
+   }
+}
+@media screen and (max-width: 680px) {
+   .dash__content__container{
+      border-left: none;
+   }
+   .dash__details > a {
+      width: 100px;
+      height: 100px;
+      font-size: 1.6rem;
+   }
+
+   .doughnutChart{
+      width: 80%;
+   }
+}
+
+@media screen and (max-width: 370px) {
+   .dash__details > a {
+      width: 80px;
+      height: 80px;
+   }
+}

@@ -1,0 +1,56 @@
+.sideNav{
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left :0;
+    background-color: #fafafa;
+    color: #222;
+    transition: 0.3s transform ease-in-out;
+    transform: translateX(-100%);
+    z-index: 200;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 2rem 1rem;
+}
+
+.sideNav.show{
+    transform: translateX(0);
+}
+.nav__close{
+    transition: 0.3s all ease-in-out;
+}
+.nav__close h1{
+    font-family: 'Playball', cursive;
+    letter-spacing: 2px;
+}
+.nav__close i:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.nav__menu{
+    height: 70%;
+}
+.nav__menu > li > a {
+    font-size: 1.6rem;
+    color: var(--dark);
+    line-height: 2;
+}
+.nav__menu > li > a:hover{
+    color: var(--primary);
+}
+.nav__icons{
+    display: flex;
+    flex-direction: column;
+}
+.nav__icons a{
+    color : var(--dark);
+    font-size: 2.5rem;
+}
+.nav__icons > a > i{
+    margin-top: 1.5rem;
+    cursor:pointer;
+}
+.nav__icons > a > i:hover{
+    color: var(--primary);
+}

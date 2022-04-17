@@ -1,0 +1,31 @@
+.createReview{
+   width: 75%;
+   margin: 0 auto;
+}
+.createReview select{
+   border: 1px solid lightgrey;
+   padding: 1rem;
+   width: 50%;
+}
+.createReview textarea{
+   width: 50%;
+}
+
+@media screen and (max-width: 800px){
+   .createReview{
+      width: 65%;
+   }
+   .createReview select ,
+   .createReview textarea{
+      width: 90%;
+   }
+}
+@media screen and (max-width: 500px){
+   .createReview{
+      width: 78%;
+   }
+   .createReview select ,
+   .createReview textarea{
+      width: 100%;
+   }
+}

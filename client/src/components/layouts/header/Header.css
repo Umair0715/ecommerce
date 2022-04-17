@@ -1,0 +1,37 @@
+
+.menu .icon{
+   font-size: 3.5rem;
+   z-index: 2;
+   cursor: pointer;
+   position: fixed;
+   top: 2rem;
+   left: 7rem;
+   color: var(--primary);
+   
+}
+.menu .icon:hover{
+   color: crimson;
+}
+@media (max-width: 700px){
+   .menu .icon{
+      left : 3rem;
+   } 
+}
+
+
+.speedDial{
+   position: fixed;
+   top: 1.5rem;
+   right: 3rem;
+}
+.speedDialIcon{
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+}
+.userOptions_icon{
+   font-size: 2rem !important;
+}
+.userOptions_icon:hover{
+   color: var(--primary);
+}
